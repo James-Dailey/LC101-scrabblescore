@@ -4,7 +4,7 @@
   "description": "intro to prof web dev assignment 2",
   "main": "scrabble-scorer.js",
   "scripts": {
-    "start": "scrabble-scorer.js",
+    "start": "",
     "test": "jasmine"
   },
   "author": "",

@@ -120,14 +120,15 @@ let vowelBonusScore = function (word) {
 
 
     function runProgram() {
-      initialPrompt();
-      scorerPrompt();
+      userInput = initialPrompt();
+      let result = scorerPrompt();
+    };
       if (scorerPromptInput === 0) {
         score = simpleScrabbleScorer(userInput);
         console.log(`Score for '${userInput}': ${simpleScore}`)
       } else if (scorerPromptInput === 1) {
         score = vowelBonusScore(userInput);
-        console.log(`Socre for '${userInput} : ${vowelBonusScore}`)
+        console.log(`Score for '${userInput} : ${vowelBonusScore}`)
       } else if (scorerPromptInput === 2) {
         score = oldScrabbleScorer(userInput);
         console.log(`Score for '${userInput}' : ${scrabbleScore}`)
